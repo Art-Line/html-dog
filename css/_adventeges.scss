@@ -1,0 +1,75 @@
+.adventeges {
+    background-color: #FCF2EB;
+    padding: 99px 0 75px;
+    margin-bottom: 81px;
+    &__item {
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 40px 25px 20px;
+        text-align: center;
+        height: 100%;
+        flex-direction: column;
+        display: flex;
+        position: relative;
+        &::before {
+            content: '';
+            width: 63px;
+            height: 56px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -30px;
+        }
+        &_01::before {
+            background-image: url('../img/adventeges-01.png');
+        }
+        &_02::before {
+            background-image: url('../img/adventeges-02.png');
+        }
+        &_03::before {
+            background-image: url('../img/adventeges-03.png');
+        }
+        h3 {
+            font-size: 25px;
+            line-height: 1.52em;
+            color: #170C04;
+            padding-bottom: 11px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            color: #170C04;
+            opacity: 0.6;
+            padding-bottom: 24px;
+            margin-bottom: auto;
+        }
+        a {
+            font-size: 16px;
+            line-height: 24px;
+            color: #E27B3A;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .adventeges {
+        padding-bottom: 35px;
+        &__item {
+            height: auto;
+            display: block;
+            margin-bottom: 40px;
+            h3 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.intro {
+    padding-bottom: 40px;
+    &__line {
+        align-items: center;
+    }
+    h1 {
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 1.5em;
+        color: #170C04;
+        padding-bottom: 47px;
+    }
+    &__buttons {
+        display: flex;
+    }
+    &__btn {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    .intro {
+        h1 {
+            font-size: 60px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .intro {
+        h1 {
+            font-size: 40px;
+            text-align: center;
+        }
+        &__buttons {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .intro {
+        h1 {
+            font-size: 32px;
+        }
+    }
+}
