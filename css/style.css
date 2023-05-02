@@ -90,6 +90,41 @@
     width: 100%;
   }
 }
+.btn {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 24px;
+  padding: 11px 30px;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  transition-duration: 300ms;
+  transition-property: opacity;
+}
+.btn_orange {
+  color: #FFFFFF;
+  background: #E27B3A;
+}
+.btn_white {
+  color: #E27B3A;
+  border: 1px solid rgba(226, 123, 58, 0.15);
+}
+.btn:hover {
+  opacity: 0.7;
+}
+
+.details-link {
+  font-size: 16px;
+  line-height: 24px;
+  color: #E27B3A;
+  text-decoration: none;
+}
+.details-link:hover {
+  text-decoration: underline;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -235,32 +270,12 @@
     font-size: 32px;
   }
 }
-.btn {
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 24px;
-  border-radius: 24px;
-  padding: 11px 30px;
-  text-decoration: none;
-  background-color: transparent;
-  border: none;
-}
-.btn_orange {
-  color: #FFFFFF;
-  background: #E27B3A;
-}
-.btn_white {
-  color: #E27B3A;
-  border: 1px solid rgba(226, 123, 58, 0.15);
-}
-
-.adventeges {
+.advantages {
   background-color: #FCF2EB;
   padding: 99px 0 75px;
   margin-bottom: 81px;
 }
-.adventeges__item {
+.advantages__item {
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -270,8 +285,14 @@
   flex-direction: column;
   display: flex;
   position: relative;
+  transition-duration: 300ms;
+  transition-property: border-color, box-shadow;
 }
-.adventeges__item::before {
+.advantages__item:hover {
+  border-color: transparent;
+  box-shadow: 0px 4px 4px #F5DFD0;
+}
+.advantages__item::before {
   content: "";
   width: 63px;
   height: 56px;
@@ -280,37 +301,28 @@
   transform: translateX(-50%);
   top: -30px;
 }
-.adventeges__item_01::before {
-  background-image: url("../img/adventeges-01.png");
+.advantages__item_01::before {
+  background-image: url("../img/advantages-01.svg");
 }
-.adventeges__item_02::before {
-  background-image: url("../img/adventeges-02.png");
+.advantages__item_02::before {
+  background-image: url("../img/advantages-02.svg");
 }
-.adventeges__item_03::before {
-  background-image: url("../img/adventeges-03.png");
+.advantages__item_03::before {
+  background-image: url("../img/advantages-03.svg");
 }
-.adventeges__item h3 {
+.advantages__item h3 {
   font-size: 25px;
   line-height: 1.52em;
   color: #170C04;
   padding-bottom: 11px;
 }
-.adventeges__item p {
+.advantages__item p {
   font-size: 16px;
   line-height: 24px;
   color: #170C04;
   opacity: 0.6;
   padding-bottom: 24px;
   margin-bottom: auto;
-}
-.adventeges__item a {
-  font-size: 16px;
-  line-height: 24px;
-  color: #E27B3A;
-  text-decoration: none;
-}
-.adventeges__item a:hover {
-  text-decoration: underline;
 }
 
 @media (max-width: 767px) {
@@ -368,15 +380,6 @@
   text-align: center;
   color: #170C04;
   margin-bottom: 9px;
-}
-.popular__item a {
-  font-size: 16px;
-  line-height: 19px;
-  text-decoration: none;
-  color: #E27B3A;
-}
-.popular__item a:hover {
-  text-decoration: underline;
 }
 
 @media (max-width: 575px) {

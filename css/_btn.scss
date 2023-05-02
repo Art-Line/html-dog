@@ -8,6 +8,8 @@
     text-decoration: none;
     background-color: transparent;
     border: none;
+    transition-duration: 300ms;
+    transition-property: opacity;
     &_orange {
         color: #FFFFFF;
         background: #E27B3A;
@@ -15,5 +17,8 @@
     &_white {
         color: #E27B3A;
         border: 1px solid rgba(226, 123, 58, 0.15);
+    }
+    &:hover {
+        opacity: 0.7;
     }
 }
